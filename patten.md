@@ -25,3 +25,12 @@ trait Monoid[T] {
   val identiy:T
 }
 ```
+
+## Fold
+
+```
+trait Foldable[T[_],A] {
+  val identiy:A
+  def fold(op:(A,A) => A):A
+}
+```
